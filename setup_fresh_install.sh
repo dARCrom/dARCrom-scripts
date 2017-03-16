@@ -43,3 +43,12 @@ export CCACHE_DIR=$HOME/.ccache
 prebuilts/misc/linux-x86/ccache/ccache -M 100G
 echo -e "export USE_CCACHE=1" >> $HOME/.bashrc
 source $HOME/.bashrc
+
+echo "Setting up repo"
+mkdir $HOME/bin
+export PATH=$HOME/bin:$PATH
+curl https://storage.googleapis.com/git-repo-downloads/repo > $HOME/bin/repo
+chmod a+x $HOME/bin/repo
+
+echo "Everything done!"
+exit 0
