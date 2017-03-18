@@ -44,7 +44,7 @@ function prepare_repo_command()
 	PATH_TO_REPO=$(which $REPO_BINARY_NAME)
 	if [ -x PATH_TO_REPO ]; then
 		# exist already
-		echo ""
+		echo "Found $REPO_BINARY_NAME in PATH!"
 	else
 		echo "Unable to find $REPO_BINARY_NAME in PATH!"
 		
@@ -62,7 +62,7 @@ function prepare_repo_command()
 			curl $REPO_BINARY_DOWNLOAD_URL > $REPO_LOCATION
 			chmod a+x $REPO_LOCATION
 		fi
-
+	fi
 }
 
 function prepare_ccache()
