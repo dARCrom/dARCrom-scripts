@@ -44,6 +44,7 @@ function prepare_repo_command()
 	PATH_TO_REPO=$(which $REPO_BINARY_NAME)
 	if [ -x PATH_TO_REPO ]; then
 		# exist already
+		echo ""
 	else
 		echo "Unable to find $REPO_BINARY_NAME in PATH!"
 		
