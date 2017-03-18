@@ -83,7 +83,8 @@ function prepare_ccache()
 			fi
 		else
 			echo "Unable to find ccache binary. Expected location was: $CCACHE_BINARY"
-		fi 	
+		fi
+	fi
 }
 
 function init_or_sync_source()
