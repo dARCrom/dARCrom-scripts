@@ -134,6 +134,7 @@ function build_target()
 	else
 		echo "Build failed! See console output for details!"
 		return 1
+	fi
 }
 
 
